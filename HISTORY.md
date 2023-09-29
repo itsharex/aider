@@ -1,5 +1,27 @@
 # Release history
 
+### v0.14.0
+
+- [Support for Claude2 and other LLMs via OpenRouter](https://aider.chat/docs/faq.html#accessing-other-llms-with-openrouter) by @joshuavial
+- Documentation for [running the aider benchmarking suite](https://github.com/paul-gauthier/aider/tree/main/benchmark)
+- Aider now requires Python >= 3.9
+
+
+### v0.13.0
+
+- [Only git commit dirty files that GPT tries to edit](https://aider.chat/docs/faq.html#how-did-v0130-change-git-usage)
+- Send chat history as prompt/context for Whisper voice transcription
+- Added `--voice-language` switch to constrain `/voice` to transcribe to a specific language
+- Late-bind importing `sounddevice`, as it was slowing down aider startup
+- Improved --foo/--no-foo switch handling for command line and yml config settings
+
+### v0.12.0
+
+- [Voice-to-code](https://aider.chat/docs/voice.html) support, which allows you to code with your voice.
+- Fixed bug where /diff was causing crash.
+- Improved prompting for gpt-4, refactor of editblock coder.
+- [Benchmarked](https://aider.chat/docs/benchmarks.html) at 63.2% for gpt-4/diff, no regression.
+
 ### v0.11.1
 
 - Added a progress bar when initially creating a repo map.
